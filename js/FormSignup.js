@@ -71,7 +71,7 @@ const FormSignup = Reactive.createComponent({
 
 		const element = create(
 			"form",
-			{ method: "POST", action: "", className: "form" },
+			{ method: "GET", action: "#", className: "form" },
 			[
 				html(`<h2 class="form__title">Registro<h2>`),
 				...this.inputs.map((input, index) => input.get(this.inputProps[index])),

@@ -51,7 +51,7 @@ const FormLogin = Reactive.createComponent({
 
 		const element = create(
 			"form",
-			{ method: "POST", action: "", className: "form" },
+			{ method: "GET", action: "#", className: "form" },
 			[
 				html(`<h2 class="form__title">Iniciar Sesión<h2>`),
 				...this.inputs.map((input, index) => input.get(this.inputProps[index])),
